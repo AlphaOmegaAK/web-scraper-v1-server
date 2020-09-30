@@ -10,10 +10,10 @@ const app = express();
 
 require('dotenv').config();
 
-// app.use(express.json());
-app.use(express.urlencoded({
-    extended: false
-}));
+app.use(express.json());
+// app.use(express.urlencoded({
+//     extended: false
+// }));
 
 //  * CORS allows for Local Devlopment
 // ! Work around without using CORS (again only local)
